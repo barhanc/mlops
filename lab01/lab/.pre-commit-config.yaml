@@ -6,3 +6,9 @@ repos:
           args: [--fix]  # Ensure fixes are applied
         - id: ruff-format  # Formatter
           args: [--line-length=119]
+    # monitor code complexity
+    - repo: https://github.com/rubik/xenon
+      rev: v0.9.0
+      hooks:
+      - id: xenon
+        args: ['--max-absolute=B', '--max-modules=B', '--max-average=A']
