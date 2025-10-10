@@ -5,7 +5,7 @@ from lab.api.models.iris import PredictRequest, PredictResponse
 
 
 app = FastAPI()
-model = lab.inference.load_model(os.path.join("models", "iris.pkl"))
+model = lab.inference.load_model(os.path.join("models", "iris.joblib"))
 
 
 @app.get("/")

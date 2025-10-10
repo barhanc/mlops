@@ -27,7 +27,7 @@ def main():
     iris = load_data()
     X, y = iris.data, iris.target_names[iris.target]
     clf = train_model(X, y)
-    save_model(clf, path=os.path.join("models", "iris.pkl"))
+    save_model(clf, path=os.path.join("models", "iris.joblib"))
 
 
 if __name__ == "__main__":
