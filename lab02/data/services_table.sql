@@ -1,4 +1,5 @@
 DROP TABLE IF EXISTS services;
+
 CREATE TABLE services (
     "Service:RDT-ID" INT,
     "Service:Date" DATE,
@@ -19,7 +20,9 @@ CREATE TABLE services (
     "Stop:Departure cancelled" BOOLEAN,
     "Stop:Platform change" BOOLEAN,
     "Stop:Planned platform" TEXT,
-    "Stop:Actual platform" TEXT,
+    "Stop:Actual platform" TEXT
 );
+
 CREATE INDEX service_rdt_id ON services("Service:RDT-ID");
+
 CREATE INDEX service_date ON services("Service:Date");
