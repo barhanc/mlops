@@ -1,4 +1,4 @@
-## Laboratory 8 homework
+## Laboratory 4 homework
 
 Homework is creating a multimodal similarity search service. It will retrieve images
 based on a text query, using embeddings from a multimodal model.
