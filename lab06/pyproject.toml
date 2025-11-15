@@ -11,6 +11,7 @@ dependencies = [
     "cleanlab",
     "datasets",
     "giskard",
+    "hf-xet>=1.2.0",
     "jupyter",
     "matplotlib",
     "pandas",
