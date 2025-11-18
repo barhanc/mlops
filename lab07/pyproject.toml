@@ -5,10 +5,13 @@ readme = "README.md"
 requires-python = ">=3.11"
 
 dependencies = [
+    "accelerate>=1.11.0",
     "numpy",
     "onnx",
-    "onnxruntime",     
+    "onnxruntime",
+    "setuptools>=80.9.0",
     "torch",
+    "torchview>=0.2.7",
     "transformers",
 ]
 
