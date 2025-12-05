@@ -1,0 +1,35 @@
+[project]
+name = "app"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Bartosz Hanc", email = "bartosz.hanc02@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "clean-text>=0.6.0",
+    "emoji~=1.6.3",
+    "fastapi>=0.118.3",
+    "httpx>=0.28.1",
+    "joblib>=1.5.2",
+    "pydantic>=2.12.0",
+    "sentence-transformers>=5.1.1",
+    "torch>=2.8.0",
+    "transformers>=4.57.0",
+    "uvicorn>=0.37.0",
+]
+
+[project.scripts]
+app = "app:main"
+
+[build-system]
+requires = ["uv_build>=0.8.23,<0.9.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "mypy>=1.18.2",
+    "pre-commit>=4.3.0",
+    "pytest>=8.4.2",
+]
