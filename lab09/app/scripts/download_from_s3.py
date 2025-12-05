@@ -5,7 +5,7 @@ S3 = boto3.resource("s3")
 BUCKET = "mlops-lab9-s3-bucket"
 
 
-def download_s3_folder(bucket_name, s3_folder, local_dir=None):
+def download_s3_folder(bucket_name: str, s3_folder: str, local_dir: str | None = None) -> None:
     # Source -
     # https://stackoverflow.com/questions/49772151/download-a-folder-from-s3-using-boto3
     # Posted by bjc, modified by community. See post 'Timeline' for change history
