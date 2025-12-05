@@ -16,8 +16,8 @@ class PredictResponse(BaseModel):
 
 app = FastAPI()
 model = Inference(
-    sklearn_model_path=os.path.join("models", "classifier.joblib"),
-    sentence_transformer_path=os.path.join("models", "sentence_transformer.model"),
+    sklearn_model_path=os.path.join("artifacts", "classifier.joblib"),
+    sentence_transformer_path=os.path.join("artifacts", "sentence_transformer.model"),
 )
 
 
