@@ -8,17 +8,15 @@ authors = [
 ]
 requires-python = ">=3.12"
 dependencies = [
-    "boto3>=1.42.3",
     "clean-text>=0.6.0",
     "emoji~=1.6.3",
     "fastapi>=0.118.3",
     "httpx>=0.28.1",
     "joblib>=1.5.2",
     "pydantic>=2.12.0",
-    "sentence-transformers>=5.1.1",
-    "torch>=2.8.0",
-    "transformers>=4.57.0",
     "uvicorn>=0.37.0",
+    "torch>=2.7.0",
+    "sentence-transformers>=5.1.2",
 ]
 
 [project.scripts]
@@ -33,4 +31,18 @@ dev = [
     "mypy>=1.18.2",
     "pre-commit>=4.3.0",
     "pytest>=8.4.2",
+    "boto3>=1.42.3",
 ]
+
+[tool.uv.sources]
+torch = [
+    { index = "pytorch-cpu" },
+]
+torchvision = [
+    { index = "pytorch-cpu" },
+]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true

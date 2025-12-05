@@ -21,6 +21,11 @@ model = Inference(
 )
 
 
+@app.get("/health")
+def health_check():
+    return {"status": "ok"}
+
+
 @app.post("/predict")
 def predict(request: PredictRequest) -> PredictResponse:
     return PredictResponse(prediction=model.predict(request.text))
