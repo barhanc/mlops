@@ -1,0 +1,3 @@
+[submodule "lab11/mlops-lab-ci-cd"]
+	path = lab11/mlops-lab-ci-cd
+	url = https://github.com/barhanc/mlops-lab-ci-cd.git
