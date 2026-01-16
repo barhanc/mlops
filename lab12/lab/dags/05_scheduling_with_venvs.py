@@ -14,6 +14,7 @@ def scheduling_dataset_gathering_with_venvs():
     @task.virtualenv(
         requirements=["twelvedata", "pendulum", "lazy-object-proxy", "cloudpickle"],
         serializer="cloudpickle",
+        python_version="3",
     )
     def get_data(*, logical_date) -> dict:
         from twelvedata import TDClient
