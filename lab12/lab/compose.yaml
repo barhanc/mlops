@@ -29,6 +29,14 @@ x-airflow-common: &airflow-common
     AIRFLOW__STANDARD__VENV_INSTALL_METHOD: "uv"
     UV_CACHE_DIR: /opt/airflow/.uv-cache
 
+    # set up LocalStack S3 as XCom backend
+    AIRFLOW__CORE__XCOM_BACKEND: "airflow.providers.common.io.xcom.backend.XComObjectStorageBackend"
+    AIRFLOW__COMMON_IO__XCOM_OBJECTSTORAGE_PATH: "s3://aws_default@airflow-xcom/xcom"
+    AIRFLOW__COMMON_IO__XCOM_OBJECTSTORAGE_THRESHOLD: "0" # threshold 0 = all files are stored in S3
+
+    # URL-encoded fake AWS connection, we must set endpoint_url for LocalStack
+    AIRFLOW_CONN_AWS_DEFAULT: "aws://test:test@?endpoint_url=http%3A%2F%2Flocalstack%3A4566&region_name=us-east-1"
+
   volumes:
     # volumes to sync local environment and containers
     - ./dags:/opt/airflow/dags
