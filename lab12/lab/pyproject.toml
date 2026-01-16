@@ -1,0 +1,21 @@
+[project]
+name = "MLOps_course_AGH_lab_12"
+version = "1.0.0"
+description = ""
+
+requires-python = "==3.11.*"
+
+dependencies = [
+    "apache-airflow[celery,postgres,standard,uv]==3.1.5",
+    "twelvedata",
+]
+
+[dependency-groups]
+dev = [
+    "ruff"
+]
+
+airflow_common = [
+    "apache-airflow[celery,postgres,standard,uv]==3.1.5",
+    "requests",
+]
