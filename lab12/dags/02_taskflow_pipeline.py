@@ -6,7 +6,7 @@ from airflow.sdk import dag, task
 
 @dag()
 def weather_data_taskflow_api():
-    @task()
+    @task
     def get_data() -> dict:
         print("Fetching data from API")
 
@@ -20,13 +20,13 @@ def weather_data_taskflow_api():
         data = {"time": data["hourly"]["time"], "temperature": data["hourly"]["temperature_2m"]}
         return data
 
-    @task()
+    @task
     def transform(data: dict) -> pd.DataFrame:
         df = pd.DataFrame(data)
         df["temperature"] = df["temperature"].clip(lower=-20, upper=50)
         return df
 
-    @task()
+    @task
     def save_data(df: pd.DataFrame) -> None:
         print("Saving the data")
         df.to_csv("data.csv", index=False)
