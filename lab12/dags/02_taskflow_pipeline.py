@@ -5,7 +5,7 @@ from airflow.sdk import dag, task
 
 
 @dag()
-def weather_data_classes_api_v2():
+def weather_data_taskflow_api():
     @task()
     def get_data() -> dict:
         print("Fetching data from API")
@@ -36,4 +36,4 @@ def weather_data_classes_api_v2():
     load(df)  # type:ignore
 
 
-weather_data_classes_api_v2()
+weather_data_taskflow_api()
