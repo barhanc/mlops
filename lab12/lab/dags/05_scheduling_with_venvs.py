@@ -15,6 +15,7 @@ def scheduling_dataset_gathering_with_venvs():
         requirements=["twelvedata", "pendulum", "lazy-object-proxy", "cloudpickle"],
         serializer="cloudpickle",
         python_version="3",
+        system_site_packages=False,
     )
     def get_data(*, logical_date) -> dict:
         from twelvedata import TDClient
