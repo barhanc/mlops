@@ -5,6 +5,8 @@ import pandas as pd
 
 from airflow.sdk import dag, task
 
+API = "https://archive-api.open-meteo.com/v1/archive"
+
 
 @dag(
     schedule=datetime.timedelta(days=7),
@@ -21,16 +23,16 @@ def weather_data_backfilling():
         end_date = logical_date.add(days=6)
         print(f"Fetching data from {start_date} to {end_date}")
 
-        url = (
-            "https://archive-api.open-meteo.com/v1/archive?"
-            "latitude=40.7143&longitude=-74.006"
-            f"&start_date={start_date.to_date_string()}"
-            f"&end_date={end_date.to_date_string()}"
-            "&hourly=temperature_2m"
-            "&timezone=auto"
-        )
+        params = {
+            "latitude": 40.7143,
+            "longitude": -74.006,
+            "start_date": start_date.to_date_string(),
+            "end_date": end_date.to_date_string(),
+            "hourly": "temperature_2m",
+            "timezone": "auto",
+        }
 
-        resp = requests.get(url)
+        resp = requests.get(API, params=params)
         resp.raise_for_status()
         data = resp.json()
 

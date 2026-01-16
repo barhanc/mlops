@@ -26,7 +26,6 @@ def scheduling_dataset_gathering_with_venvs_and_connections():
     @task
     def save_data(data: dict) -> None:
         print("Saving the data")
-
         if not data:
             raise ValueError("No data received")
 

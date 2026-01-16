@@ -3,6 +3,8 @@ import pandas as pd
 
 from airflow.sdk import dag, task
 
+API = "https://archive-api.open-meteo.com/v1/archive"
+
 
 @dag()
 def weather_data_taskflow_api():
@@ -11,9 +13,15 @@ def weather_data_taskflow_api():
         print("Fetching data from API")
 
         # New York temperature in 2025
-        url = "https://archive-api.open-meteo.com/v1/archive?latitude=40.7143&longitude=-74.006&start_date=2025-01-01&end_date=2025-12-31&hourly=temperature_2m&timezone=auto"
-
-        resp = requests.get(url)
+        params = {
+            "latitude": 40.7143,
+            "longitude": -74.006,
+            "start_date": "2025-01-01",
+            "end_date": "2025-12-31",
+            "hourly": "temperature_2m",
+            "timezone": "auto",
+        }
+        resp = requests.get(API, params=params)
         resp.raise_for_status()
 
         data = resp.json()
