@@ -27,13 +27,13 @@ def weather_data_taskflow_api():
         return df
 
     @task()
-    def load(df: pd.DataFrame) -> None:
+    def save_data(df: pd.DataFrame) -> None:
         print("Saving the data")
         df.to_csv("data.csv", index=False)
 
     data = get_data()
     df = transform(data)  # type:ignore
-    load(df)  # type:ignore
+    save_data(df)  # type:ignore
 
 
 weather_data_taskflow_api()
