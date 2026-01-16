@@ -8,6 +8,9 @@ requires-python = "==3.11.*"
 dependencies = [
     "apache-airflow[celery,postgres,standard,uv]==3.1.5",
     "twelvedata",
+    "pandas",
+    "pyarrow>=22.0.0",
+    "requests",
 ]
 
 [dependency-groups]
