@@ -35,7 +35,10 @@ x-airflow-common: &airflow-common
     AIRFLOW__COMMON_IO__XCOM_OBJECTSTORAGE_THRESHOLD: "0" # threshold 0 = all files are stored in S3
 
     # URL-encoded fake AWS connection, we must set endpoint_url for LocalStack
-    AIRFLOW_CONN_AWS_DEFAULT: "aws://test:test@?endpoint_url=http%3A%2F%2Flocalstack%3A4566&region_name=us-east-1"
+    AIRFLOW_CONN_AWS_DEFAULT: '{"conn_type": "aws", "login": "test", "password": "test", "extra": {"endpoint_url": "http://localstack:4566", "region_name": "us-east-1"}}'
+    AWS_ACCESS_KEY_ID: test
+    AWS_SECRET_ACCESS_KEY: test
+    AWS_DEFAULT_REGION: us-east-1
 
   volumes:
     # volumes to sync local environment and containers
