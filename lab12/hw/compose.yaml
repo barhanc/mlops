@@ -41,7 +41,7 @@ x-airflow-common: &airflow-common
     AWS_DEFAULT_REGION: us-east-1
 
     # Postgres storage connection
-    AIRFLOW_CONN_POSTGRES_STORAGE: '{"conn_type": "postgres", "login": "exchange_data", "password": "exchange_data", "host": "storage_db", "port": 5432, "schema": "exchange_data"}'
+    AIRFLOW_CONN_POSTGRES_STORAGE: '{"conn_type": "postgres", "login": "storage_db", "password": "storage_db", "host": "storage_db", "port": 5432, "schema": "storage_db"}'
 
   volumes:
     # volumes to sync local environment and containers
@@ -78,18 +78,14 @@ services:
   storage_db:
     image: postgres:17
     environment:
-      POSTGRES_USER: exchange_data
-      POSTGRES_PASSWORD: exchange_data
-      POSTGRES_DB: exchange_data
+      POSTGRES_USER: storage_db
+      POSTGRES_PASSWORD: storage_db
+      POSTGRES_DB: storage_db
     ports:
       - "5433:5432"
     volumes:
       - storage-db-volume:/var/lib/postgresql/data
       - ./init-db:/docker-entrypoint-initdb.d/
-    healthcheck:
-      test: ["CMD", "pg_isready", "-U", "exchange_data"]
-      interval: 10s
-      retries: 5
     restart: always
 
   valkey:

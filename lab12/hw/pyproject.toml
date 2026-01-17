@@ -1,0 +1,25 @@
+[project]
+name = "MLOps_course_AGH_lab_12"
+version = "1.0.0"
+description = ""
+
+requires-python = "==3.11.*"
+
+dependencies = [
+    "apache-airflow[celery,postgres,standard,uv,cloudpickle]==3.1.5",
+    "twelvedata",
+    "pandas",
+    "pyarrow>=22.0.0",
+    "requests",
+]
+
+[dependency-groups]
+dev = [
+    "ruff"
+]
+
+airflow_common = [
+    "apache-airflow[celery,postgres,standard,uv,cloudpickle,s3fs]==3.1.5",
+    "requests",
+    "apache-airflow-providers-amazon",
+]
