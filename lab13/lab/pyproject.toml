@@ -12,6 +12,7 @@ dependencies = [
     "guardrails-ai>=0.7.2",
     "mcp-use>=1.5.2",
     "openai<2",  # Guardrails AI limitation
+    "pandas>=3.0.0",
     "polars>=1.37.1",
     "pyarrow>=23.0.0",
     "python-dotenv>=1.2.1",
