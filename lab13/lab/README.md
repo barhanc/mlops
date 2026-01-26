@@ -1,0 +1,17 @@
+## Introduction
+
+The excersises were done on a PC with GTX 1660 GPU with 6GB of VRAM thus I used
+the smaller 0.6B model and added a `--gpu_memory_utilization 0.8` flag.
+
+## Ex.1.
+
+* inference time and KV cache size without dynamic quantization
+
+![alt text](figs/01_kv_orig.png)
+![alt text](figs/01_infer_time_orig.png)
+
+* inference time and KV cache size with dynamic quantization
+
+![alt text](figs/01_kv_quant.png)
+![alt text](figs/01_infer_time_quant.png)
+
