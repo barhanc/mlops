@@ -28,3 +28,9 @@ the smaller 0.6B model and added a `--gpu_memory_utilization 0.8` flag.
 ![alt text](figs/04_llm_mcp_response.png)
 
 ![alt text](figs/image.png)
+
+## Ex.5.
+
+For some reason the `RestrictToTopic` guardrail returns some api key error.
+
+![alt text](figs/05_llm_guardrails_response.png)
