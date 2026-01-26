@@ -22,3 +22,9 @@ the smaller 0.6B model and added a `--gpu_memory_utilization 0.8` flag.
 ## Ex.3.
 
 ![alt text](figs/03_llm_mcp_response.png)
+
+## Ex.4.
+
+![alt text](figs/04_llm_mcp_response.png)
+
+![alt text](figs/image.png)
