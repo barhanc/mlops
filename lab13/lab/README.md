@@ -15,3 +15,6 @@ the smaller 0.6B model and added a `--gpu_memory_utilization 0.8` flag.
 ![alt text](figs/01_kv_quant.png)
 ![alt text](figs/01_infer_time_quant.png)
 
+## Ex.2.
+
+![alt text](figs/02_llm_response.png)
