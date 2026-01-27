@@ -1,0 +1,15 @@
+[project]
+name = "MLOps_course_AGH_lab_13"
+version = "1.0.0"
+description = ""
+
+requires-python = "==3.11.*"
+
+dependencies = [
+    "fastmcp>=2.14.3",
+    "openai<2",
+    "guardrails-ai>=0.7.2",
+    "pydantic-settings>=2.12.0",
+    "requests>=2.32.5",
+    "vllm>=0.13.0",
+]
