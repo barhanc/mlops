@@ -3,15 +3,8 @@
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-3776AB.svg?style=flat&logo=python&logoColor=white)](https://www.python.org/)
 [![Docker](https://img.shields.io/badge/Docker-24.0+-2496ED.svg?style=flat&logo=docker&logoColor=white)](https://www.docker.com/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.110+-009688.svg?style=flat&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
-[![Terraform](https://img.shields.io/badge/Terraform-1.7+-844FBA.svg?style=flat&logo=terraform&logoColor=white)](https://www.terraform.io/)
-[![AWS](https://img.shields.io/badge/AWS-Cloud-232F3E.svg?style=flat&logo=amazon-aws&logoColor=white)](https://aws.amazon.com/)
-[![Airflow](https://img.shields.io/badge/Apache_Airflow-2.8+-017CEE.svg?style=flat&logo=apache-airflow&logoColor=white)](https://airflow.apache.org/)
-[![MLflow](https://img.shields.io/badge/MLflow-2.11+-0194E2.svg?style=flat&logo=mlflow&logoColor=white)](https://mlflow.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-
 An end-to-end curriculum covering modern Machine Learning Operations (MLOps), data engineering, distributed serving, automated CI/CD pipelines, cloud infrastructure, and LLM systems. Based on the [MLOps Course at AGH University](https://github.com/j-adamczyk/MLOps_course_AGH) by Jakub Adamczyk.
-
----
 
 ## Overview
 
@@ -161,8 +154,6 @@ An end-to-end curriculum covering modern Machine Learning Operations (MLOps), da
 - **Directory**: [`lab13/`](./lab13/)
 </details>
 
----
-
 ## Getting Started
 
 ### 1. Clone the Repository
@@ -188,8 +179,6 @@ uv run jupyter lab
 ```
 
 For containerized modules (e.g. `lab01`, `lab04`, `lab12`), refer to the local `README.md` inside each lab directory for `docker-compose up` and service commands.
-
----
 
 ## Course References
 
