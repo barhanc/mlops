@@ -1,4 +1,4 @@
-# MLOps: Production Machine Learning Engineering 🚀⚙️
+# MLOps: Production Machine Learning Engineering
 
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-3776AB.svg?style=flat&logo=python&logoColor=white)](https://www.python.org/)
 [![Docker](https://img.shields.io/badge/Docker-24.0+-2496ED.svg?style=flat&logo=docker&logoColor=white)](https://www.docker.com/)
@@ -13,7 +13,7 @@ An end-to-end curriculum covering modern Machine Learning Operations (MLOps), da
 
 ---
 
-## 📑 Overview
+## Overview
 
 | Lab | Module | Core Technologies | Key Concepts & Skills |
 | :---: | :--- | :--- | :--- |
@@ -33,7 +33,7 @@ An end-to-end curriculum covering modern Machine Learning Operations (MLOps), da
 
 ---
 
-## 🔬 Detailed Lab Breakdown
+## Detailed Lab Breakdown
 
 <details open>
 <summary><b>Lab 1: MLOps Foundations & Serving</b></summary>
@@ -183,7 +183,7 @@ An end-to-end curriculum covering modern Machine Learning Operations (MLOps), da
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Clone the Repository
 
@@ -211,6 +211,6 @@ For containerized modules (e.g. `lab01`, `lab04`, `lab12`), refer to the local `
 
 ---
 
-## 📖 Course References
+## Course References
 
 - Original problem statements and course syllabus: [j-adamczyk/MLOps_course_AGH](https://github.com/j-adamczyk/MLOps_course_AGH) by Jakub Adamczyk.
