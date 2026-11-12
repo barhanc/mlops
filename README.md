@@ -4,6 +4,7 @@
 [![Docker](https://img.shields.io/badge/Docker-24.0+-2496ED.svg?style=flat&logo=docker&logoColor=white)](https://www.docker.com/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.110+-009688.svg?style=flat&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 An end-to-end curriculum covering modern Machine Learning Operations (MLOps), data engineering, distributed serving, automated CI/CD pipelines, cloud infrastructure, and LLM systems. Based on the [MLOps Course at AGH University](https://github.com/j-adamczyk/MLOps_course_AGH) by Jakub Adamczyk.
 
 ## Overview
