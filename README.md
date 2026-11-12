@@ -183,6 +183,6 @@ uv run jupyter lab
 
 For containerized modules (e.g. `lab01`, `lab04`, `lab12`), refer to the local `README.md` inside each lab directory for `docker-compose up` and service commands.
 
-## Course References
+## References
 
 - Original problem statements and course syllabus: [j-adamczyk/MLOps_course_AGH](https://github.com/j-adamczyk/MLOps_course_AGH) by Jakub Adamczyk.
