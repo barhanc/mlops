@@ -9,7 +9,7 @@
 [![MLflow](https://img.shields.io/badge/MLflow-2.11+-0194E2.svg?style=flat&logo=mlflow&logoColor=white)](https://mlflow.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-An end-to-end curriculum covering modern Machine Learning Operations (MLOps), data engineering, distributed serving, automated CI/CD pipelines, cloud infrastructure, and LLM systems. Based on the [MLOps Course at AGH University](https://github.com/j-adamczyk/MLOps_course_AGH) by Jacek Adamczyk.
+An end-to-end curriculum covering modern Machine Learning Operations (MLOps), data engineering, distributed serving, automated CI/CD pipelines, cloud infrastructure, and LLM systems. Based on the [MLOps Course at AGH University](https://github.com/j-adamczyk/MLOps_course_AGH) by Jakub Adamczyk.
 
 ---
 
@@ -213,4 +213,4 @@ For containerized modules (e.g. `lab01`, `lab04`, `lab12`), refer to the local `
 
 ## 📖 Course References
 
-- Original problem statements and course syllabus: [j-adamczyk/MLOps_course_AGH](https://github.com/j-adamczyk/MLOps_course_AGH) by Jacek Adamczyk.
+- Original problem statements and course syllabus: [j-adamczyk/MLOps_course_AGH](https://github.com/j-adamczyk/MLOps_course_AGH) by Jakub Adamczyk.
