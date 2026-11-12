@@ -16,7 +16,7 @@ An end-to-end curriculum covering modern Machine Learning Operations (MLOps), da
 - **Key Concepts**:
   - Reproducible dependency and virtual environment management with `uv` and `pyproject.toml`.
   - Static code analysis, linting, formatting, and automated pre-commit hooks (`ruff`).
-  - Building production-ready REST APIs for model inference using **FastAPI** with Pydantic request/response validation.
+  - Building production-ready REST APIs for model inference using **FastAPI** with Pydantic validation.
   - Multi-stage **Docker** containerization for compact, reproducible production deployment images.
 - **Directory**: [`lab01/`](./lab01/)
 </details>
@@ -24,7 +24,7 @@ An end-to-end curriculum covering modern Machine Learning Operations (MLOps), da
 <details>
 <summary><b>Lab 2: Databases & Columnar Storage</b></summary>
 
-- **Focus**: Comparing transactional databases with modern analytical query engines and columnar data formats.
+- **Focus**: Comparing transactional databases with analytical query engines and columnar data formats.
 - **Key Concepts**:
   - Relational database querying and connection pooling with **PostgreSQL** (`psycopg`).
   - In-process vectorized analytical SQL querying with **DuckDB**.
@@ -46,7 +46,7 @@ An end-to-end curriculum covering modern Machine Learning Operations (MLOps), da
 <details>
 <summary><b>Lab 4: Vector Databases & Semantic Search</b></summary>
 
-- **Focus**: Indexing and querying high-dimensional embedding spaces for Retrieval-Augmented Generation (RAG).
+- **Focus**: Indexing and querying high-dimensional embedding spaces for semantic retrieval.
 - **Key Concepts**:
   - Vector similarity search in relational systems with PostgreSQL and **pgvectorscale**.
   - Dedicated distributed vector database deployment and collection management with **Milvus**.
@@ -84,7 +84,7 @@ An end-to-end curriculum covering modern Machine Learning Operations (MLOps), da
 - **Key Concepts**:
   - Post-training weight quantization (INT8) and operator fusion in PyTorch.
   - Exporting PyTorch computation graphs to the **ONNX** (Open Neural Network Exchange) open standard.
-  - Executing and benchmarking optimized runtime inference with **ONNX Runtime** Execution Providers.
+  - Executing and benchmarking runtime inference with **ONNX Runtime** Execution Providers.
 - **Directory**: [`lab07/`](./lab07/)
 </details>
 
@@ -106,19 +106,20 @@ An end-to-end curriculum covering modern Machine Learning Operations (MLOps), da
 - **Key Concepts**:
   - Storing and partitioning datasets and model weights in **Amazon S3**.
   - Pushing production Docker containers to **Amazon Elastic Container Registry (ECR)**.
-  - Deploying scalable containerized prediction microservices on **Amazon ECS** (Elastic Container Service) and serverless inference with **AWS Lambda**.
-  - Managing least-privilege security policies with **AWS IAM**.
+  - Deploying containerized prediction microservices on **Amazon ECS** with **AWS Fargate** serverless compute.
+  - Managing least-privilege security policies with **AWS IAM** and operational monitoring with **CloudWatch**.
 - **Directory**: [`lab09/`](./lab09/)
 </details>
 
 <details>
 <summary><b>Lab 10: Infrastructure as Code (IaC) with Terraform</b></summary>
 
-- **Focus**: Declarative, automated, and version-controlled cloud infrastructure provisioning.
+- **Focus**: Declarative, automated, and version-controlled infrastructure provisioning.
 - **Key Concepts**:
-  - Writing modular **Terraform** configuration files (`.tf`) for AWS cloud resources.
-  - Managing remote state backends with state locking via DynamoDB and S3.
-  - Provisioning compute instances (EC2), security groups, networking (VPC/Subnets), and storage for ML services.
+  - Writing modular **Terraform** configuration files (`.tf`) using HCL syntax.
+  - Provisioning and configuring **Amazon S3** buckets with lifecycle policies, encryption, versioning, and aliases.
+  - Creating reusable Terraform child modules and managing infrastructure state across environments.
+  - Integrating multi-provider configurations (AWS and GitHub providers).
 - **Directory**: [`lab10/`](./lab10/)
 </details>
 
@@ -128,8 +129,8 @@ An end-to-end curriculum covering modern Machine Learning Operations (MLOps), da
 - **Focus**: Continuous integration and deployment automation for machine learning systems.
 - **Key Concepts**:
   - Defining automated **GitHub Actions** workflows triggered on pull requests and releases.
-  - Running automated unit tests, code linters, and model regression checks in CI runners.
-  - Building multi-platform container images with Docker Buildx and pushing signed images to registries.
+  - Running automated unit tests, code linters, and model checks in CI runners.
+  - Building container images with Docker Buildx and pushing images to container registries.
 - **Directory**: [`lab11/`](./lab11/)
 </details>
 
@@ -149,9 +150,10 @@ An end-to-end curriculum covering modern Machine Learning Operations (MLOps), da
 
 - **Focus**: Serving, controlling, and integrating Generative AI and Large Language Models.
 - **Key Concepts**:
-  - High-throughput LLM serving using **vLLM** with PagedAttention and continuous batching.
-  - Connecting models to external tools and context using the **Model Context Protocol (MCP)**.
-  - Validating structured JSON outputs and enforcing safety, compliance, and hallucination guardrails via Guardrails AI.
+  - Dynamic model quantization for memory-efficient local LLM inference.
+  - Manual and automated tool-calling workflows for language models.
+  - Connecting models to external tools and context using the **Model Context Protocol (MCP)** (clients and custom servers).
+  - Validating structured outputs and enforcing safety and format guardrails via **Guardrails AI**.
 - **Directory**: [`lab13/`](./lab13/)
 </details>
 
