@@ -1,4 +1,4 @@
-# MLOps: Production Machine Learning Engineering
+# MLOps
 
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-3776AB.svg?style=flat&logo=python&logoColor=white)](https://www.python.org/)
 [![Docker](https://img.shields.io/badge/Docker-24.0+-2496ED.svg?style=flat&logo=docker&logoColor=white)](https://www.docker.com/)
@@ -14,26 +14,6 @@ An end-to-end curriculum covering modern Machine Learning Operations (MLOps), da
 ---
 
 ## Overview
-
-| Lab | Module | Core Technologies | Key Concepts & Skills |
-| :---: | :--- | :--- | :--- |
-| [**01**](./lab01/) | **MLOps Foundations & Serving** | FastAPI, Docker, Ruff, Pre-commit, Git | Dependency management with `uv`, code quality gates, microservice REST API serving, containerization |
-| [**02**](./lab02/) | **Databases & Columnar Storage** | PostgreSQL, DuckDB, Apache Parquet | OLTP vs. OLAP database paradigms, vector execution with DuckDB, efficient storage formats |
-| [**03**](./lab03/) | **High-Performance Data Processing** | Polars, Apache Arrow | Rust-backed DataFrames, query optimizer, lazy evaluation execution graphs, memory efficiency |
-| [**04**](./lab04/) | **Vector Databases & Semantic Search** | pgvectorscale, SQLAlchemy, Milvus | High-dimensional embedding indexing (HNSW, DiskANN), vector similarity queries, RAG retrieval pipelines |
-| [**05**](./lab05/) | **Data & Model Versioning** | DVC, MLflow Tracking & Registry | Reproducible data pipelines with DVC, experiment tracking, metric visualization, model artifact staging |
-| [**06**](./lab06/) | **Data-Centric AI & Model Testing** | Cleanlab, Giskard, Captum, SHAP | Automated label error detection, out-of-distribution (OOD) tests, adversarial robustness, model explainability |
-| [**07**](./lab07/) | **Inference Optimization** | PyTorch, ONNX, ONNX Runtime | Post-training quantization, TorchScript graph tracing, hardware acceleration, latency benchmarking |
-| [**08**](./lab08/) | **Monitoring & Drift Detection** | Evidently AI, NannyML | Data drift, concept drift, feature distribution divergence (PSI, KS-test), CBPE performance estimation |
-| [**09**](./lab09/) | **Cloud Computing for ML** | AWS (S3, ECR, ECS, Lambda, IAM) | Cloud architecture for ML, serverless model serving, container registry management, security policies |
-| [**10**](./lab10/) | **Infrastructure as Code (IaC)** | Terraform, AWS Provider | Declarative infrastructure provisioning, remote state management, reproducible cloud ML environments |
-| [**11**](./lab11/) | **CI/CD Automation** | GitHub Actions, Docker Buildx | Automated linting, test suites, multi-arch Docker image builds, automated deployment pipelines |
-| [**12**](./lab12/) | **Pipeline Orchestration** | Apache Airflow, Docker Compose | Directed Acyclic Graphs (DAGs), scheduling, dependency resolution, automated retraining and batch inference |
-| [**13**](./lab13/) | **LLMOps & Modern AI Systems** | vLLM, Model Context Protocol (MCP), Guardrails | High-throughput PagedAttention LLM serving, tool use with MCP, hallucination control and output validation |
-
----
-
-## Detailed Lab Breakdown
 
 <details open>
 <summary><b>Lab 1: MLOps Foundations & Serving</b></summary>
